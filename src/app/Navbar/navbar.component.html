@@ -1,0 +1,20 @@
+<div class="hamburger" id="hamburger-1" (click)="isActiveFunction()">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<div *ngIf="showContent" class="navbar">
+  <ol>
+    <li>
+      <a routerLink=''>
+        <strong>Home</strong>
+      </a>
+    </li>
+    <li>
+      <a routerLink="products">
+        <strong>Products</strong>
+      </a>
+    </li>
+  </ol>
+</div>
