@@ -1,0 +1,16 @@
+<div class="hamburger" id="hamburger-1" (click)="isActiveFunction()">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<div *ngIf="showContent" class="overlay">
+  <div class="overlaycontent">
+    <a routerLink=''>
+      <strong>Home</strong>
+    </a>
+    <a routerLink="products">
+      <strong>Products</strong>
+    </a>
+  </div>
+</div>
