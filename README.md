@@ -1,6 +1,16 @@
-# Extol
+#Extol
+
+##Objectives 
+Demonstrate... 
+*Coding prowess Code readability Testing abilities Design abilities Communication skills Anything you think is important to demostrate 
+
+Requirements Create an iOS ( Version 8 or 9 ) or Android application ( Version 5 or 6 ), capable of being installed on our phones Use either native or hybrid approach For hybrid, use whatever framework you are most comfortable with Register an account at developer.shop.com to gain access to the APIs Use at least 2 of the APIs in your App (i.e. Search, Product Detail) Use at least one native feature of the phone/tablet (camera, contacts db, ﬁngerprint scanner, etc.) Style the application beyond base styling 
+
+Deliverables An .ipa or .apk ﬁle Your source code in a publically accessible repository Documentation on what you did, why you did it, what the strengths and limitations are Documentation on how to build your project
+________________________
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+
 
 ## Development server
 
@@ -25,3 +35,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##Vendor Template Url

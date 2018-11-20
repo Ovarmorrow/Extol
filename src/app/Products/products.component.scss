@@ -1,36 +1,41 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 
-.gridWrap {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-    width: 100%;
-    padding: 0 10px;
-    // grid-auto-flow: dense;
-    grid-auto-rows: minmax(100px, auto);
-    // grid-row-gap: 50px;
-    // grid-column-gap: 70px;
-    
+.content {
+  padding: 0 4%;
 }
 
+.gridWrap {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  justify-content: space-around;
+  width: 100%;
+  // grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  // grid-row-gap: 50px;
+  // grid-column-gap: 70px;
+  
+}
+
+
 .price {
-    float: left;
+  float: left;
 }
 
 .cashback {
-    float: right;
-    margin-right: 70px;
+  float: right;
+  margin-right: 70px;
 }
 
 .item-content {
-    // text-transform: uppercase;
-    // font-family: "futura-pt",sans-serif;
-    // color: #000000;
-    // padding-bottom: 8px;
-    font-size: 14px;
-    line-height: 1;
+  // text-transform: uppercase;
+  // font-family: "futura-pt",sans-serif;
+  // color: #000000;
+  // padding-bottom: 8px;
+  font-size: 14px;
+  line-height: 1;
 }
 
 //Footer color #4eb980
@@ -41,11 +46,13 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 .card img {
   max-width: 100%;
   vertical-align: top;
   position: relative;
 }
+
 .card .add-to-cart {
   position: absolute;
   top: 0;
@@ -63,6 +70,7 @@
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
+
 .card .add-to-cart i {
   display: inline-block;
   margin-right: 10px;
@@ -87,23 +95,33 @@
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
+
 .card:hover .add-to-cart i,
 .card.hover .add-to-cart i {
   background-color: #2980b9;
 }
 
 .card {
-    width: 100%;
-    max-width: 800px;
-    padding-left: 50px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);  
+  width: 100%;
+  max-width: 800px;
+  padding-left: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .item-images {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
+//Mobile Styling
+@media only screen and (max-width: 450px) {
+  .gridWrap {
+
+    grid-template-columns: 1fr;
+  }
+}
+
