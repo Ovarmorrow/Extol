@@ -207,7 +207,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
+  // border-bottom: dotted 1px;
   color: #4eb980;
   text-decoration: none;
 }
@@ -2998,7 +2998,7 @@ input[type="button"].small,
 }
 
 #footer .copyright li {
-  border-left: dotted 1px;
+  // border-left: dotted 1px;
   display: inline-block;
   margin-left: 1em;
   padding-left: 1em;

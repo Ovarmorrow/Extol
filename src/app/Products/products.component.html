@@ -2,20 +2,29 @@
 <div id="header">
 </div>
 <!-- Grid Container -->
-<div class="gridWrap">
+<!-- <input type="text" placeholder="Search Lumi" [value]="searchValue"> -->
+<input type="text" placeholder="Search.." (keyup)="onKey($event)">
+
+<button (click)="newSearch()">Submit</button>
+
+
+
+<div class="gridWrap" *ngIf="data.products">
+
+ 
 
   <!-- Products card-description-price-img -->
   
   <div *ngFor="let p of data.products;"  class="card">
     <!-- change productsImg productsName to actual name in products.ts-->
-    <img class="item-images" src="{{ p.imageUrl }}">
+    <img class="item-images" src="{{ p.image.sizes[2].url }}">
     <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
     <p class="item-content name">{{ p.name }}</p>
     <!-- <p class="item-content description">{{ p.description }}</p> -->
     <!-- <p>{{ p.minimumPrice }}</p> -->
-    <p class="item-content price">{{ p.maximumPrice }}</p>
+    <p class="item-content price">${{ p.maximumPrice }}</p>
     <!-- <p>{{ p.ciPoints }}*</p> -->
-    <p class="item-content cashback">Cashback: ${{ p.cashback }}</p>
+    <p class="item-content cashback">Cashback: ${{ p.maximumCashback }}</p>
 
 </div>
 </div>
@@ -30,7 +39,18 @@
     <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
       orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
 
-<!-- </div>
-</div> -->
+</div>
+</div>
 
     
+
+
+<!-- <h2 style="
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 13px;
+    font-size: 40px;
+">BEING A WOMAN</h2> -->

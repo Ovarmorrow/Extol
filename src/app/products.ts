@@ -1,4 +1,5 @@
 export class products {
+  data ? : any;
   brand ? : any;
   bv ? : any;
   cashback ? : any;
@@ -6,11 +7,10 @@ export class products {
   description ? : any;
   ibv ? : any;
   id ? : String;
-  imageUrl ? : any;
+  image ? : any;
   links ? : any;
   maximumPrice ? : any;
   minimumPrice ? : any;
   name ? : String;
   referralUrl ? : any;
-
 }

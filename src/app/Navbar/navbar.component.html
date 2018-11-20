@@ -4,17 +4,13 @@
   <span class="line"></span>
 </div>
 
-<div *ngIf="showContent" class="navbar">
-  <ol>
-    <li>
-      <a routerLink=''>
-        <strong>Home</strong>
-      </a>
-    </li>
-    <li>
-      <a routerLink="products">
-        <strong>Products</strong>
-      </a>
-    </li>
-  </ol>
+<div *ngIf="showContent" class="overlay">
+  <div class="overlaycontent">
+    <a routerLink=''>
+      <strong>Home</strong>
+    </a>
+    <a routerLink="products">
+      <strong>Products</strong>
+    </a>
+  </div>
 </div>
