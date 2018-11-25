@@ -8,13 +8,15 @@ import { NavbarComponent } from './Navbar/navbar.component';
 import { ProductsComponent } from './Products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsService } from './products.service';
+import { DetailsComponent } from './Details/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ProductsComponent
+    ProductsComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,94 @@
+.detailsCard * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .detailsCard img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+  }
+  
+  .detailsCard .add-to-cart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    opacity: 0;
+    background-color: #409ad5;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  
+  .detailsCard .add-to-cart i {
+    display: inline-block;
+    margin-right: 10px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #164666;
+    color: #ffffff;
+    font-size: 1.4em;
+  }
+  
+  .detailsCard .price {
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 48px;
+    letter-spacing: 1px;
+  }
+  
+  .detailsCard:hover .add-to-cart,
+  .detailsCard.hover .add-to-cart {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  
+  .detailsCard:hover .add-to-cart i,
+  .detailsCard.hover .add-to-cart i {
+    background-color: #2980b9;
+  }
+  
+  .detailsCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 35px;
+    padding: 30px 30px 0 0;
+    width: 100%;
+    padding-left: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .item-images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #footer::before {
+      width: 0;
+  } 
+
+  /* .leftImage {
+      grid-area: leftImage;
+    width: 50%;
+  }
+
+  .rightText {
+      grid-area: rightText;
+    width: 50%;
+  } */
