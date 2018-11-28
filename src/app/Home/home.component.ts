@@ -13,9 +13,9 @@ export class HomeComponent {
   
 
   constructor() {
-    this.phone = "/assets/images/phone.jpeg";
-    this.biz = "/assets/images/biz.jpeg";
-    this.code =  "/assets/images/code.jpeg";
+    this.phone = "./assets/images/phone.jpeg";
+    this.biz = "./assets/images/biz.jpeg";
+    this.code =  "./assets/images/code.jpeg";
   }
 
   ngOnInit() {

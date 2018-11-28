@@ -5,7 +5,7 @@
     <input *ngIf="userName === 'Default Danny'" id="nameBox" type="text" placeholder="Name">
     <div class="userImage">
       <img [src]="userImage"  class="avatar" style="width:250px;height:200px">
-      <input *ngIf="userImage === '../assets/images/defaultuser.jpg'" type="file" name="userpicture" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
+      <input *ngIf="userImage === './assets/images/defaultuser.jpg'" type="file" name="userpicture" #Image accept="image/*" (change)="handleFileInput($event.target.files)">
       <p>{{ userName }}</p>
     </div>
 
