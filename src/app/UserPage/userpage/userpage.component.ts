@@ -11,7 +11,7 @@ import {
 export class UserpageComponent implements OnInit {
 
   userName = "Default Danny";
-  userImage = "../assets/images/defaultuser.jpg";
+  userImage = "./assets/images/defaultuser.jpg";
   fileToUpload: any;
 
   constructor() {}
@@ -42,7 +42,7 @@ export class UserpageComponent implements OnInit {
   resetData() {
     localStorage.clear();
     this.userName = "Default Danny";
-    this.userImage = "../assets/images/defaultuser.jpg";
+    this.userImage = "./assets/images/defaultuser.jpg";
   }
 
   handleFileInput(file: FileList) {
