@@ -28,11 +28,12 @@ export class UserpageComponent implements OnInit {
 
 
   submitData() {
-    const nameBoxInput = ( < HTMLInputElement > document.getElementById("nameBox")).value
-    localStorage.setItem("Name", nameBoxInput);
+    this.userName = (< HTMLInputElement > document.getElementById("nameBox")).value;
+    localStorage.setItem("Name", this.userName);
+    console.log("name", this.userName);
 
-    const userImage = document.getElementById('chooseFile');
-    console.log("user image", userImage);
+    // const userImage = document.getElementById('chooseFile');
+    // console.log("user image", userImage);
     // const imgData = this.getBase64Image(userImage);
     localStorage.setItem("UserImage", this.userImage);
     // location.reload(); Breaks when Hosted, User page.html "doesnt actually exist"
