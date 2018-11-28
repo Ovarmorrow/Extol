@@ -35,7 +35,7 @@ export class UserpageComponent implements OnInit {
     console.log("user image", userImage);
     // const imgData = this.getBase64Image(userImage);
     localStorage.setItem("UserImage", this.userImage);
-    location.reload();
+    // location.reload(); Breaks when Hosted, User page.html "doesnt actually exist"
   }
 
   resetData() {
