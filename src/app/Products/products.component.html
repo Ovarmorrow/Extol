@@ -14,9 +14,9 @@
 
     <div *ngFor="let p of data.products;" class="card">
       
-      <img class="item-images" src="{{ p.image.sizes[2].url }}">
+      <a [routerLink]="['/details', p.id]"><img class="item-images" src="{{ p.image.sizes[2].url }}"></a>
       <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
-      <p class="item-content name">{{ p.name }}</p>
+      <p [innerHTML]="p.name" class="item-content name">{{ p.name }}</p>
       <p class="item-content price">${{ p.maximumPrice }}</p>
       <p class="item-content cashback">Cashback: ${{ p.maximumCashback }}</p>
 

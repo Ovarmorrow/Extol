@@ -1,5 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { ProductsService } from 'src/app/products.service';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  ProductsService
+} from 'src/app/products.service';
+import {
+  ActivatedRoute
+} from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -10,11 +18,21 @@ export class DetailsComponent implements OnInit {
 
   data: any;
   stripDesc: string;
+  urlParam: any;
 
-  constructor(private service: ProductsService) { }
+  constructor(
+    private service: ProductsService,
+    private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.service.getDetails()
+    this.urlParam = this.route.snapshot.paramMap.get('prodId');
+    console.log(this.urlParam);
+    // this.route.paramMap
+    // .subscribe(params => {
+    //   this.urlParam = params.prodId;
+    //   console.log(params);
+    // })
+    this.service.getDetails(this.urlParam)
       .subscribe(response => {
         this.data = response;
         console.log("get Details Response", response);
@@ -27,3 +45,6 @@ export class DetailsComponent implements OnInit {
   }
 
 }
+
+
+//data.products[0].prodId
