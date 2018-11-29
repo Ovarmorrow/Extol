@@ -3,9 +3,13 @@
 </div>
 <!-- Grid Container -->
 <!-- <input type="text" placeholder="Search Lumi" [value]="searchValue"> -->
-<input type="text" placeholder="Search.." (keyup)="onKey($event)">
 
-<button (click)="newSearch()">Submit</button>
+<div class="searchContainer">
+  <span class="searchIcon"><i class="fas fa-search"></i></span>
+  <input type="text" id="search" placeholder="Search.." (keyup)="onKey($event)">
+</div>
+  
+<button class="searchSubmit" (click)="newSearch()">Submit</button>
 
 
 <div class="content">

@@ -1,0 +1,56 @@
+.userContent {
+    display: block;
+    margin: 90px;
+}
+
+#nameBox {
+    width: 30%;
+    margin-left: 50vh;
+}
+
+.userName>p {
+    display: block;
+    text-align: center;
+    /* padding-right: 50vh; */
+    margin-top: 20px;
+    color: #4eb980f5;
+    font-weight: bold;
+}
+
+.userImage {
+    display: block;
+    padding-left: 54vh;
+}
+
+.buttons {
+    margin-left: 70px;
+}
+
+
+
+/* Mobile (Portrait) */
+
+@media screen and (max-width: 480px) {
+
+.userContent {
+    display: block;
+    margin: 90px;
+}
+
+.userName>p {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #4eb980f5;
+    font-weight: bold;
+}
+
+.userImage {
+    display: block;
+    padding-right: 20px;
+}
+
+.buttons {
+    margin-left: 70px;
+}
+}

@@ -117,6 +117,52 @@
   width: 50%;
 }
 
+.searchContainer {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  padding-left: 60px;
+}
+
+.searchContainer::before {
+  font-family: 'FontAwesome';
+    // color:red;
+    position: relative;
+    left: -75px;
+    content: "\f002";
+}
+
+#search {
+width: 300px;
+height: 50px;
+border: double;
+border-color: #4eb98087;
+background: white;
+color:#4f5b66;
+font-size: 12pt;
+float: left;
+padding-left: 55px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  margin-left: 7px;
+  margin-top: 27px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.searchSubmit {
+  position: relative;
+  left: 10px;
+  top: 19px;
+}
+
 //Mobile Styling
 @media only screen and (max-width: 450px) {
   .gridWrap {

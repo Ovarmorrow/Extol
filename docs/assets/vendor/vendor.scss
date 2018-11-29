@@ -2339,7 +2339,7 @@ textarea {
   -ms-transition: -ms-transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
   color: #fff;
-  font-size: 6em;
+  font-size: 5em;
   height: 1em;
   left: 50%;
   line-height: 1em;
@@ -2377,9 +2377,9 @@ span.image.icon {
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: FontAwesome;
+  // font-family: FontAwesome;
   font-style: normal;
-  font-weight: normal;
+  // font-weight: normal;
   text-transform: none !important;
 }
 
@@ -3317,6 +3317,7 @@ input[type="button"].small,
 
   #header .logo {
     font-size: 1.5em;
+    left: 5%;
   }
 
   #header h1 {
