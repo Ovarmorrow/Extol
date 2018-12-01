@@ -1,15 +1,17 @@
 <div id="header">
 </div>
 
-<div class="userContent">
-  <input *ngIf="userName === 'Default Danny'" id="nameBox" type="text" placeholder="Name">
+<div class="userContent card">
+  <input *ngIf="userName === 'Default Danny'" id="nameBox" type="text" placeholder="Enter Name...">
   <div class="userImage">
     <img [src]="userImage" class="avatar" style="width:250px;height:200px">
-    <input *ngIf="userImage === './assets/images/defaultuser.jpg'" type="file" name="userpicture" #Image accept="image/*"
-      (change)="handleFileInput($event.target.files)">
-    <div class="userName">
-      <p>{{ userName }}</p>
-    </div>
+  </div>
+  
+  <input *ngIf="userImage === './assets/images/defaultuser.jpg'" id="chooseFile" type="file" name="userpicture" #Image accept="image/*"
+    (change)="handleFileInput($event.target.files)">
+    
+  <div class="userName">
+    <p>{{ userName }}</p>
   </div>
 
   <div class="buttons">
@@ -17,3 +19,16 @@
     <button (click)="resetData()" type="button" class="resetData">Reset</button>
   </div>
 </div>
+
+<div id="footer">
+    <div class="contain medium">
+  
+      <header class="major last">
+        <h2>Weekly Deals!</h2>
+      </header>
+  
+      <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
+        orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+  
+    </div>
+  </div>
