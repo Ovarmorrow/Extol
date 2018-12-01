@@ -16,7 +16,7 @@
   grid-auto-rows: minmax(100px, auto);
   // grid-row-gap: 50px;
   // grid-column-gap: 70px;
-  
+
 }
 
 
@@ -127,25 +127,25 @@
 
 .searchContainer::before {
   font-family: 'FontAwesome';
-    // color:red;
-    position: relative;
-    left: -75px;
-    content: "\f002";
+  // color:red;
+  position: relative;
+  left: -75px;
+  content: "\f002";
 }
 
 #search {
-width: 300px;
-height: 50px;
-border: double;
-border-color: #25283975;
-background: white;
-color:#4f5b66;
-font-size: 12pt;
-float: left;
-padding-left: 55px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  border: double;
+  border-color: #25283975;
+  background: white;
+  color: #4f5b66;
+  font-size: 12pt;
+  float: left;
+  padding-left: 55px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .searchIcon {
@@ -168,9 +168,24 @@ border-radius: 5px;
 
 //Mobile Styling
 @media only screen and (max-width: 450px) {
-  .gridWrap {
 
+  .searchContainer {
+    padding-left: 17px;
+  }
+
+  .searchSubmit {
+    margin-left: 25px;
+  }
+
+  .gridWrap {
     grid-template-columns: 1fr;
   }
 }
 
+@media only screen and (max-width: 420px) {
+  .searchSubmit {
+  margin-left: 17px;
+  width: 70px;
+  padding: 0 8px;
+  }
+}
