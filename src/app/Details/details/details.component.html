@@ -7,8 +7,8 @@
   <div class="rightText">
     <div class="add-to-cart"> <i class="ion-android-add"></i><span>Add to Cart</span></div>
     <p [innerHTML]="data.products[0].product.caption" class="item-content name"></p>
-    <p class="item-content price">${{ data.products[0].product.priceInfo.actualPrice }}</p>
-    <p class="item-content cashback">Cashback: ${{ data.products[0].product.priceInfo.cashBack }}</p>
+    <p class="item-content price">{{ data.products[0].product.priceInfo.actualPrice | currency }}</p>
+    <p class="item-content cashback">Cashback: {{ data.products[0].product.priceInfo.cashBack | currency }}</p>
     <div class="description">
       <p [innerHTML]="stripDesc" class="item-content descriptionText"></p>
       <!-- <button (click)="isHidden()">More</button> -->

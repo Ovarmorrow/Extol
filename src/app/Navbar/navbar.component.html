@@ -4,7 +4,7 @@
   <span class="line"></span>
 </div>
 
-<div *ngIf="showContent" class="overlay">
+<div (click)="isActiveFunction()" *ngIf="showContent" class="overlay">
   <div class="overlaycontent">
     <a routerLink=''>
       <strong>Home</strong>
